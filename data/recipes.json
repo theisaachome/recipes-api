@@ -1,0 +1,30 @@
+{
+    "name":"Brown Butter Bourbon Banana Bread",
+    "images":[],
+    "description":"WHO: Jennifer Perillo is the author of the cookbook Homemade with Love.",
+    "servers":"5",
+    "preTime":"30 min",
+    "cookTime":"15 min",
+    "instructions":[
+        "Step 1 ",
+        "Step 2 ",
+        "Step 3 ",
+        "Step 4 "
+    ],
+    "tags":["Breakfast","soft drink","dinner"],
+    "ingredients":[
+      "  2 cups flour",
+      "  1/4 teaspoon baking soda",
+        "1/2 teaspoon baking powder",
+       " 1/2 teaspoon salt",
+        "8 tablespoons butter",
+        "3 very ripe bananas",
+        "2 large eggs",
+       " 3/4 cup plus 1 tablespoon, brown sugar, divided",
+        "1 teaspoon pure vanilla extract", 
+       " 1 tablespoon bourbon",
+        "1/2 cup buttermilk",
+        "2/3 cup toasted, chopped pecans"
+    ]
+
+}
