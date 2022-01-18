@@ -1,4 +1,5 @@
 const express = require('express');
+const cookieParser  = require('cookie-parser');
 const morgan = require('morgan');
 const dotenv = require('dotenv');
 const colors = require('colors');
@@ -16,12 +17,19 @@ const recipes = require('./src/routes/recipesRoutes');
 const auth= require('./src/routes/authRoutes');
 const app = express();
 
+//  Body parser
+app.use(express.json());
+// Cookie parser
+app.use(cookieParser());
+
+
+
 //  Development logging
 // app.use(logger)
 if(process.env.NODE_ENV==="development"){
     app.use(morgan('dev'))
 }
-app.use(express.json());
+
 // Mount All the routes file
 app.use("/api/v1/recipes",recipes);
 app.use('/api/v1/auth',auth);
@@ -36,7 +44,6 @@ const server=app.listen(
 })
 
 // Handle unhandle rejection
-
 process.on('unhandledRejection',(err,promise)=>{
     console.log(`Error : ${err.message}`.red.bold);
     // Close server and exit process

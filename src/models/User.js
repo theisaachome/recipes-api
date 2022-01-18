@@ -34,12 +34,15 @@ UserSchema.pre("save",async function(next){
     this.password= await bcrypt.hash(this.password,salt);
 });
 
-// Sign in with JWT
+// Sign JWT and return
 UserSchema.methods.getSignJwtToken=function(){
   return  jwt.sign({id:this._id},process.env.JWT_SECRET,{
       expiresIn:process.env.JWT_EXPIRE
   });
 }
-
+// Match user entered password and bcrypted password
+UserSchema.methods.matchPassword = async function(enteredPassword){
+    return await bcrypt.compare(enteredPassword,this.password);
+}
 const User = mongoose.model("User",UserSchema);
 module.exports=User;
