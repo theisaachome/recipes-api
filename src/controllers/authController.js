@@ -67,5 +67,12 @@ exports.login = asyncHandler(async (req, res, next) => {
     //    res.status(200).json({success:true,token});
     sendTokenResponse(user, 200, res);
 })
-
-exports.ResetPassword = asyncHandler(async (req, res, next) => { })
+//  Current loggedin User
+exports.getMe=asyncHandler(async(req,res,next)=>{
+    const user =await User.findById(req.user.id);
+    res.status(200).json({
+        success:true,
+        data:user,
+    })
+});
+exports.resetPassword = asyncHandler(async (req, res, next) => { })

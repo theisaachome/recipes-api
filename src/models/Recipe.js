@@ -16,7 +16,7 @@ const recipeSchema = mongoose.Schema({
         trim:true,
         maxlength:[500,'Name can not be more thann 50 characters long.']
     },
-    servers:{
+    serve:{
         type:Number,
     },
     preTime:{
