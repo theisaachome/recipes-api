@@ -15,6 +15,8 @@ connectDB();
 // Routes file import 
 const recipes = require('./src/routes/recipesRoutes');
 const auth= require('./src/routes/authRoutes');
+const user = require('./src/routes/userRoutes');
+
 const app = express();
 
 //  Body parser
@@ -33,6 +35,8 @@ if(process.env.NODE_ENV==="development"){
 // Mount All the routes file
 app.use("/api/v1/recipes",recipes);
 app.use('/api/v1/auth',auth);
+app.use("/api/v1/users",user);
+
 
 app.use(errorHandler);
 
