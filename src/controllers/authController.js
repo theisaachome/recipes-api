@@ -3,29 +3,6 @@ const User = require("../models/User");
 const ErrorResponse = require("../utils/errorResponse");
 
 
-//  Get token from model , create cookie and send response.
-const sendTokenResponse = (user, statusCoode, res) => {
-
-    // create token
-    const token = user.getSignJwtToken();
-    const options = {
-        expires: new Date(
-            Date.now() + process.env.JWT_COOKIE_EXPIRE * 24 * 60 * 60 * 1000),
-        httpOnly: true,
-    }
-    if(process.env.NODE_ENV==="production"){
-        options.secure=true;
-    }
-
-    res
-        .status(statusCoode)
-        .cookie('token', token, options)
-        .json({
-            success: true,
-            token
-        });
-
-}
 exports.register = asyncHandler(async (req, res, next) => {
     const { name, email, password, role } = req.body;
 
@@ -75,4 +52,48 @@ exports.getMe=asyncHandler(async(req,res,next)=>{
         data:user,
     })
 });
+
+// forget Password
+exports.forgotPassword =asyncHandler(async(req,res,next)=>{
+
+    const user = await User.findOne({email:req.body.email});
+
+    if(!user){
+        return next(new ErrorResponse(`There is no user with that email`,404));
+    }
+    // Get reset token
+    const resetToken = user.getResetPasswordToken();
+    await user.save({validateBeforeSave:false});
+
+    res.status(200).json({
+        success:true,
+        data:user,
+    })
+});
 exports.resetPassword = asyncHandler(async (req, res, next) => { })
+
+
+
+//  Get token from model , create cookie and send response.
+const sendTokenResponse = (user, statusCoode, res) => {
+
+    // create token
+    const token = user.getSignJwtToken();
+    const options = {
+        expires: new Date(
+            Date.now() + process.env.JWT_COOKIE_EXPIRE * 24 * 60 * 60 * 1000),
+        httpOnly: true,
+    }
+    if(process.env.NODE_ENV==="production"){
+        options.secure=true;
+    }
+
+    res
+        .status(statusCoode)
+        .cookie('token', token, options)
+        .json({
+            success: true,
+            token
+        });
+
+}
