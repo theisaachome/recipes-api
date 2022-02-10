@@ -1,30 +1,107 @@
-{
-    "name":"Brown Butter Bourbon Banana Bread",
-    "images":[],
-    "description":"WHO: Jennifer Perillo is the author of the cookbook Homemade with Love.",
-    "servers":"5",
-    "preTime":"30 min",
-    "cookTime":"15 min",
-    "instructions":[
-        "Step 1 ",
-        "Step 2 ",
-        "Step 3 ",
-        "Step 4 "
+[
+  {
+    "typeOfMeat":"Pork",
+    "name": "Tasty Roasted Pork Belly",
+    "description": "This roasted pork belly will surprise you for sure! It’s a keto recipe you must try!",
+    "preparationTime": "10 minutes",
+    "cookingTime": "1 hour and 30 mintues",
+    "servings": 6,
+    "ingredients": [
+      "2 tablespoons stevia",
+      "1 tablespoon lemon juice",
+      "1 quart water",
+      "17 ounces apples, cored and cut into wedges ",
+      "2 pounds pork belly, scored",
+      "Salt and black pepper to the taste",
+      "A drizzle of olive oil"
     ],
-    "tags":["Breakfast","soft drink","dinner"],
-    "ingredients":[
-      "  2 cups flour",
-      "  1/4 teaspoon baking soda",
-        "1/2 teaspoon baking powder",
-       " 1/2 teaspoon salt",
-        "8 tablespoons butter",
-        "3 very ripe bananas",
-        "2 large eggs",
-       " 3/4 cup plus 1 tablespoon, brown sugar, divided",
-        "1 teaspoon pure vanilla extract", 
-       " 1 tablespoon bourbon",
-        "1/2 cup buttermilk",
-        "2/3 cup toasted, chopped pecans"
-    ]
-
-}
+    "directions": [
+      "In your blender, mix water with apples, lemon juice and stevia and pulse very well.",
+      "Put the porkbelly in a steamer tray and steam for 1 hour.",
+      " Transfer pork belly to a baking sheet, rub with a drizzle of oil, season with salt and pepper and pour the apple sauce over it.",
+      "Introduceintheovenat425degreesFfor30minutes.",
+      "Slice pork roast, divide between plates and serve with the applesauce on top."
+    ],
+    "nutrition": {
+      "calories": 456,
+      " fat": 34,
+      " fiber": 4,
+      " carbs": 10,
+      " protein": 25
+    }
+  },
+  {
+    "typeOfMeat":"Pork",
+    "name": "Amazing Stuffed Pork",
+    "description": " Try this keto dish really soon!",
+    "preparationTime": "10 minutes",
+    " cookingTime": "30 minutes",
+    " servings": 4,
+    "Ingredients": [
+      " Zest of 2 limes",
+      " Zest from 1 orange",
+      "Juice from 1 orange",
+      "Juice from 2 limes",
+      "4 teaspoons garlic, minced",
+      "3⁄4 cup olive oil",
+      "1 cup cilantro, chopped",
+      "1 cup mint, chopped",
+      "1 teaspoon oregano, dried",
+      " Salt and black pepper to the taste ",
+      "2 teaspoons cumin, ground",
+      "4 pork loin steaks",
+      "2 pickles, chopped",
+      "4 ham slices",
+      "6 Swiss cheese slices",
+      "2 tablespoons mustard"
+    ],
+    "directions": [
+      "In your food processor,mix lime zest and juice with orange zest and juice, garlic, oil, cilantro, mint, oregano, cumin, salt and pepper and blend well.",
+      "Season steaks with salt and pepper,place them into a bowl,add marinade you’ve made, toss to coat and leave aside for a couple of hours.",
+      "Place steaks on a working surface,divide pickles,cheese, mustard and ham on them, roll and secure with toothpicks.",
+      "Heat up a pan over medium high heat,add pork rolls cook them for 2 minutes on each side and transfer them to a baking sheet.",
+      "Introduce in the oven at 350 degrees F and bake for 25 minutes.",
+      "Divide between plates and serve."
+    ],
+    "nnutrition": {
+      "calories": 270,
+      "fat": 7,
+      "fiber": 2,
+      "carbs": 3,
+      "protein": 20
+    }
+  },
+  {
+    "typeOfMeat":"Pork",
+    "name": "Delicious Pork Chops",
+    "description": "These pork chops are all you need to end this day!",
+    "preparationTime": "10 minutes",
+    "cookingTime": "40 minutes",
+    "servings": 3,
+    "ingredients": [
+      "8 ounces mushrooms, sliced ",
+      "1 teaspoon garlic powder",
+      "1 yellow onion, chopped",
+      "1 cup mayonnaise",
+      "3 pork chops, boneless",
+      "1 teaspoon nutmeg",
+      "1 tablespoon balsamic vinegar",
+      " 1⁄2 cup coconut oil"
+    ],
+    "directions": [
+      "Heat up a pan with the oil over medium heat,add mushrooms and onions, stir and cook for 4 minutes.",
+      "Add pork chops,season with nutmeg and garlic powder and brown on both sides.",
+      "Introduce pan in the oven at 350 degrees Fandbake for 30 minutes.",
+      "Transfer pork chops to plates and keep swarm.",
+      "Heat up the pan over medium heat,add vinegar and mayo over mushrooms mix, stir well and take off heat.",
+      " Drizzle sauce over pork chops and serve."
+    ],
+    "nutrition": {
+      "calories": 600,
+      "fat": 10,
+      "fiber": 1,
+      "carbs": 8,
+      "protein": 30
+    }
+  }
+]

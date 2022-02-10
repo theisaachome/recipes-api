@@ -8,6 +8,10 @@ const recipeSchema = mongoose.Schema({
         required: [true, "Please add a name."],
         trim: true,
     },
+    typeOfMeat:{
+        type:String,
+        required:[true,"Please add the type of meat for recipe."]
+    },
     images: [],
     slug: String,
     description: {

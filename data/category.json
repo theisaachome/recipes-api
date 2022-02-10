@@ -1,0 +1,29 @@
+[
+    {
+        "name":"Breakfast"
+    },
+    {
+        "name":"Lunch"
+    },
+    {
+        "name":"side dish"
+    },
+    {
+        "name":"Snacks"
+    },
+    {
+        "name":"Fish and Seafood"
+    },
+    {
+        "name":"Poultry"
+    },
+    {
+        "name":"Meat"
+    },
+    {
+        "name":"Vegetables"
+    },
+    {
+        "name":"Dessert"
+    }
+]
